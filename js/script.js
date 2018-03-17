@@ -121,11 +121,15 @@ $(function() {
 	board.addColumn(doneColumn);
 
 	//Default cards
-	var card1 = new Card('Example task');
+	var card1 = new Card('Example task 1');
 	var card2 = new Card("Create Kanban boards");
+	var card3 = new Card('Example task 2');
+	var card4 = new Card('Example task 3');
 
 	//Adding default cards
 	todoColumn.addCard(card1);
 	doingColumn.addCard(card2);
+	todoColumn.addCard(card3);
+	todoColumn.addCard(card4);
 
 });

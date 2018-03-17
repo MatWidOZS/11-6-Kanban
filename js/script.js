@@ -122,7 +122,7 @@ $(function() {
 
 	//Default cards
 	var card1 = new Card('New task');
-	var card2 - new Card("Create Kanban boards");
+	var card2 = new Card("Create Kanban boards");
 
 	//Adding default cards
 	todoColumn.addCard(card1);

@@ -1,0 +1,16 @@
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+	// background: #474747;
+}
+
+.column-container {
+	background: #474747;
+	padding: 15px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}

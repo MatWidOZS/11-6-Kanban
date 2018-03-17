@@ -82,7 +82,7 @@ $(function() {
 		removeCard: function() {
 			this.$element.remove();
 		}
-	}
+	};
 
 	//Board object
 	var board = {

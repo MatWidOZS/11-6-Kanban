@@ -52,4 +52,38 @@ $(function() {
 		}
 	};
 
+	function Card(description) {
+		var self = this;
+
+		this.id = randomString();
+		this.description = description;
+		this.$element = createCard();
+
+		function createCard() {
+			//Components of card
+			var $card = $('<li>').addClass('card');
+			var $cardDescription = $('<p>').addClass('card-description').text(self.description);
+			var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+
+			//Event
+			$cardDelete.click(function() {
+				self.removeCard();
+			});
+
+			//Combining card elements
+			$card.append($cardDelete)
+				.append($cardDescription);
+
+			return $card;
+		}
+	}
+
+	Card.prototype = {
+		removeCard: function() {
+			this.$element.remove();
+		}
+	}
+
+	
+
 });

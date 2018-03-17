@@ -21,8 +21,8 @@ $(function() {
 			var $column = $('<div>').addClass('column');
 			var $columnTItle = $('<h2>').addClass('column-title').text(self.name);
 			var $columnCardList = $('<ul>').addClass('column-card-list');
-			var $columnDelete = $('<button>').addClass('btn-delete').text('x');
-			var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
+			var $columnDelete = $('<button>').addClass('col-delete').text('x');
+			var $columnAddCard = $('<button>').addClass('add-card').text('+ add a card');
 
 			//Events
 			$columnDelete.click(function() {
@@ -63,7 +63,7 @@ $(function() {
 			//Components of card
 			var $card = $('<li>').addClass('card');
 			var $cardDescription = $('<p>').addClass('card-description').text(self.description);
-			var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+			var $cardDelete = $('<button>').addClass('card-delete').text('x');
 
 			//Event
 			$cardDelete.click(function() {
@@ -121,7 +121,7 @@ $(function() {
 	board.addColumn(doneColumn);
 
 	//Default cards
-	var card1 = new Card('New task');
+	var card1 = new Card('Example task');
 	var card2 = new Card("Create Kanban boards");
 
 	//Adding default cards

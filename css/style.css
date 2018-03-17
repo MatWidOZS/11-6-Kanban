@@ -1,15 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 * {
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background: #244DAB;
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3em;
+  font-weight: bold; }
+
+button {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 5px; }
+
+.create-column {
+  display: block;
+  margin: 0 auto;
+  background: #5ADB3F; }
+  .create-column:hover {
+    background: #20B301; }
 
 .column-container {
-  background: #474747;
   padding: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around; }
+
+.column {
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  min-width: 350px;
+  padding: 10px;
+  position: relative; }
+
+.column-title {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px; }
+
+.column-card-list {
+  list-style: none;
+  padding-left: 0; }
+
+.col-delete {
+  background: #F61D32;
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+  .col-delete:hover {
+    background: #CF0115; }
+
+.add-card {
+  background: #5ADB3F;
+  display: block;
+  margin: 0 auto; }
+  .add-card:hover {
+    background: #20B301; }
+
+.card {
+  background: #FFC34A;
+  padding: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  /* &:after {
+  	content: '';
+  	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  
+  	width: 1px;
+  	height: 1px;
+  	border-bottom: solid 12px rgb(255,255,255);
+  	border-right: solid 12px rgb(255,255,255);
+  	border-left: solid 12px #D68F01;
+  	border-top: solid 12px #D68F01;
+  } */ }
+
+.card-delete {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0; }
+
+.card-description {
+  font-weight: 600;
+  padding-left: 10px; }
+
+.card-placeholder {
+  border: 2px dashed #FFD073;
+  height: 60px;
+  margin: 10px 0; }
 
 /*# sourceMappingURL=style.css.map */

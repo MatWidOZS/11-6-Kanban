@@ -97,7 +97,7 @@ $(function() {
 	//Enable cards moving
 	function initSortable() {
 		$('.column-card-list').sortable({
-			connentWith: '.column-card-list',
+			connectWith: '.column-card-list',
 			placeholder: 'card-placeholder'
 		}).disableSelection();
 	}

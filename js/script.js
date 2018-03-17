@@ -102,11 +102,30 @@ $(function() {
 		}).disableSelection();
 	}
 
+	//Event listener for button.create-column
 	$('.create-column').click(function() {
 		var name = prompt('Enter a column name');
 		var column = new Column(name);
 
 		board.addColumn(column);
 	});
+
+	//Default columns
+	var todoColumn = new Column('To do');
+	var doingColumn = new Column('Doing');
+	var doneColumn = new Column('Done');
+
+	//Adding default columns
+	board.addColumn(todoColumn);
+	board.addColumn(doingColumn);
+	board.addColumn(doneColumn);
+
+	//Default cards
+	var card1 = new Card('New task');
+	var card2 - new Card("Create Kanban boards");
+
+	//Adding default cards
+	todoColumn.addCard(card1);
+	doingColumn.addCard(card2);
 
 });
